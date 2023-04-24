@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   deploy:
-    name: Run dev tests
+    name: Run dev tests staging
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repo
@@ -22,7 +22,7 @@ jobs:
         with:
           MWCS_DEPLOY_DEST: "/httpdocs/wp-content/cicd"
           MWCS_INTEGRATION_SECRET: ${{secrets.MWCS_INTEGRATION_SECRET}}
-          MWCS_INTEGRATION_ID: "Z8hBrFjcEVBNmLvFYhyZ76"
-          MWCS_APP_ID: "21529"
+          MWCS_INTEGRATION_ID: "WXVW6ddU7KyyWc68UruoAN"
+          MWCS_APP_ID: "21547"
           MWCS_WORKING_DIR: ${{github.workspace}}
           MWCS_API_URL: "https://mgmt.nstk.net/api"
